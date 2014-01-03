@@ -1,4 +1,5 @@
-PollutedPlanetPatcher
+PollutedPlanetPatcher - made redundent
+As of Polluted Planet 3/1/14
 =====================
 
 Changes the resolution of Polluted Planet by Grant Kot
