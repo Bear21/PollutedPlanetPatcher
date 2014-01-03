@@ -54,7 +54,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 		return -1;
 	}
 	fseek(FP, 0x25e0c, 0);
-	char set=0;
+	unsigned char set=0;
 	fread(&set, 1, 1, FP);
 	if(set==0x6A)
 	{
@@ -67,7 +67,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 		fread(&val, 4, 1, FP);
 		swprintf_s(g_width, L"%d", val, 4);
 	}
-	else if(set==0xF8)
+	else if(set==0xF3)
 	{
 		memcpy(g_width, L"1024", sizeof(L"1024"));
 		memcpy(g_height, L"768", sizeof(L"768"));
