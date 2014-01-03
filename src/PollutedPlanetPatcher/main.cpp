@@ -155,7 +155,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			CreateWindowEx(
                 WS_EX_CLIENTEDGE,
                 L"button", L"Patch", WS_CHILD | WS_VISIBLE,
-                120, 35, 80, 30,							//patch button size
+                120, 40, 80, 20,							//patch button size
                 hWnd, (HMENU)IDC_BUTTON,
                 NULL, 0
                 );
