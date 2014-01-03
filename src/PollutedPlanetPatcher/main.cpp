@@ -207,7 +207,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 				if(_wfopen_s(&FP, L"Polluted_Planet.exe", L"rb+") !=0)
 				{
-					MessageBox(NULL, L"Error opening file, check to see if it's in the correct directory", NULL, NULL);
+					MessageBox(NULL, L"Error opening file, Make sure it's closed before you continue", NULL, NULL);
 				}
 				else
 				{
